@@ -1,14 +1,14 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const Middleware = require("./middleware/middleware");
-const ErrorHandlingMiddleware = require("./middleware/error-handling");
+const Middleware = require("./plans-service/middleware/middleware");
+const ErrorHandlingMiddleware = require("./plans-service/middleware/error-handling");
 
 dotenv.config();
 const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-const PlansController = require("./controllers/plans-controller");
+const PlansController = require("./plans-service/controllers/plans-controller");
 const SubscriptionsController = require("./controllers/subscriptions-controller");
 
 Middleware(app);
