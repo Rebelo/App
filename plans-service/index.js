@@ -1,26 +1,24 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const Middleware = require("./middleware/middleware");
-const ErrorHandlingMiddleware = require("./middleware/error-handling");
+const Middleware = require("./plans-service/middleware/middleware");
+const ErrorHandlingMiddleware = require("./plans-service/middleware/error-handling");
 
 dotenv.config();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 const app = express();
 
-const PlansController = require("./controllers/plans-controller");
-const SubscriptionsController = require("./controllers/subscriptions-controller");
+const PlansController = require("./plans-service/controllers/plans-controller");
 
 Middleware(app);
 
-app.use("/api/plans", PlansController);
-app.use("/api/subscriptions", SubscriptionsController);
+app.use("", PlansController);
 
 // Error middleware must be defined after all other middleware/routes
 ErrorHandlingMiddleware(app);
 
 app.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}`);
+    console.log(`Plans service listening on port ${PORT}`);
 });
 
 

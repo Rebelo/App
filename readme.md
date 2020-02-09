@@ -1,6 +1,6 @@
 Backend's application from a personal project
 
-I am using:
+We are using:
 
 - microsservices with docker and kubernets
 - Models - Controller - Service architecture in node.js
@@ -17,7 +17,7 @@ I am using:
 
 While the scope of the project grows, this will grow too.
 
-For instance, we have 3 services:
+For instance, we have 2 services:
 
 - plans
 - subscriptions
