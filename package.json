@@ -1,5 +1,5 @@
 {
-  "name": "course-project",
+  "name": "app_foderozo",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -25,5 +25,16 @@
   "devDependencies": {
     "chai": "^4.2.0"
   },
-  "description": ""
+  "description": "app pra fechar um ciclo",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rebelo/App.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rebelo/App/issues"
+  },
+  "homepage": "https://github.com/Rebelo/App#readme"
 }
