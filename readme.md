@@ -15,13 +15,12 @@ We are using:
 
 
 
-While the scope of the project grows, this will grow too.
+While the scope of the project grows, this will grow too:
 
-For instance, we have 2 services:
+For while, we have 2 services:
 
 - plans
 - subscriptions
-
 
 
 The next to be done:
